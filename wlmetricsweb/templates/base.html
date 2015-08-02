@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>WLMetrics | {% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href={{ url_for('static', filename='favicon.ico') }} type="image/x-icon"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- JQUERY UI-->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="https:////cdn.jsdelivr.net/animatecss/3.3.0/animate.min.css">
+
+
+    <!-- CUSTOM STYLESHEET -->
+	<link rel="stylesheet" href={{ url_for('static', filename='css/wlmetricsweb.css') }}>
+
+    {% block stylesheets %}
+
+    {% endblock %}
+</head>
+
+<body>
+    {% block page_content %}
+    {% endblock %}
+
+	<!-- JAVASCRIPTS -->
+	<!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- JQUERY UI-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+	<!-- BOOTSTRAP - Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- TIMEAGO -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.timeago/1.4.1/jquery.timeago.min.js"></script>
+    <!-- JQuery Waypoints-->
+    <script src="https://cdn.jsdelivr.net/jquery.waypoints/2.0.5/waypoints.min.js"></script>
+    <!-- JQuery ScrollTo-->
+    <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.1/jquery.scrollTo.min.js"></script>
+    <!-- JQuery LocalScroll-->
+    <script src="https://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script>
+
+    <!-- CUSTOM SCRIPT -->
+	<script src={{ url_for('static', filename='js/wlmetricsweb.js') }}></script>
+
+    {% block javascripts %}
+    {% endblock %}
+	<!-- /JAVASCRIPTS -->
+
+</body>
+
+</html>
