@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block page_content %}
+		<!-- Parallax Background
+	================================================== -->
+	<!-- image is set in the CSS as a background image -->
+	<div id="parallax"></div>
+	<!-- End Parallax Background
+	================================================== -->
+
+	<!-- Start Header
+	================================================== -->
+	<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <!-- Your Logo -->
+	      <a href="../" class="navbar-brand">WLMetrics</a>
+	    </div>
+	    <!-- Start Navigation -->
+	    <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+          <ul class="nav navbar-nav">
+			<li>
+	          <a href="#hero">Home</a>
+	        </li>
+	        <li>
+	          <a href="#features">Features</a>
+	        </li>
+	        <li>
+	          <a href="#image">About</a>
+	        </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right header-button">
+            <li>
+              <button type="button" class="btn btn-primary" onclick="location.href='/login';">Login</button>
+            </li>
+          </ul>
+	    </nav>
+	  </div>
+	</header>
+	<!-- ==================================================
+	End Header -->
+
+<!-- Start Hero Section
+	================================================== -->
+	<section id="hero" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5"></div>
+				<div class="col-md-7">
+					<div class="lp-element animate" data-animate="fadeInDown">
+						<h1>WLMetrics</h1>
+						<p class="lead">Measure, plot and analyze your weightlifting sessions! Learn and grow!</p>
+
+						<p><a class="btn btn-primary btn-lg" role="button">Features</a>
+							<a class="btn btn-danger btn-lg" role="button">See Gallery</a>
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ==================================================
+	End Hero -->
+
+    <!-- Start Features
+	================================================== -->
+	<section id="features" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Title -->
+					<div class="overview animate" data-animate="flipInX">
+						<h1>Measure your performance and improve</h1>
+						<p class="lead">
+                            By recording your weightlifting sessions you can study them
+                            afterwards and study your technique for possible improvements.
+                        </p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="service-block animate" data-animate="fadeInRight">
+						<span class="glyphicon glyphicon-list"></span>
+						<h3>Access recordings</h3>
+						<p>All your recorded weightlifting sessions available for study here!</p>
+
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="service-block animate" data-animate="flipInY">
+						<span class="glyphicon glyphicon-stats"></span>
+						<h3>Plots & Diagrams</h3>
+						<p>The recorded data can be plotted in a multitude of ways, for your viiewing pleasure.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="service-block animate" data-animate="fadeInLeft">
+						<span class="glyphicon glyphicon-eye-open"></span>
+						<h3>Read Statistics</h3>
+						<p>All recorded sessions are analysed and statistical summaries are created automatically.</p>
+					</div>
+				</div>
+                <div class="col-md-offset-2 col-md-4 col-sm-12">
+                    <div class="service-block animate" data-animate="fadeInLeft">
+                        <span class="glyphicon glyphicon-star"></span>
+
+                        <h3>Improve Your Results</h3>
+
+                        <p>Draw conclusions based on your data and improve your performance!</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="service-block animate" data-animate="fadeInLeft">
+                        <span class="glyphicon glyphicon-share-alt"></span>
+
+                        <h3>Share & Compare</h3>
+
+                        <p>Compare your performance to other WLMetrics users!</p>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Start Image Block
+================================================== -->
+    <section id="image" class="section" style="background-color:#FFF; border-top: 1px solid rgba(0, 0, 0, .1);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 sol-sm-12">
+                    <div class="overview animate" data-animate="flipInX">
+                        <h1>Simple but Powerful</h1>
+
+                        <p class="lead">Tap record in your app and start lifting! </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12"><img class="animate img-responsive" data-animate="fadeInLeft"
+                                                     src="http://placehold.it/555x416" alt=""/></div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="content-block animate" data-animate="fadeInRight" style="margin-top: 60px;">
+                        <h2></h2>
+
+                        <p class="lead">Info text.</p>
+                        <hr/>
+                        <p>
+                            Text describing just how interesting this methodlogy is.
+                            Text describing just how interesting this methodlogy is.
+                            Text describing just how interesting this methodlogy is.
+                            Text describing just how interesting this methodlogy is.
+                            Text describing just how interesting this methodlogy is.
+                            Text describing just how interesting this methodlogy is.
+                            Text describing just how interesting this methodlogy is.
+                        </p>
+                        <button class="btn btn-md btn-primary">Learn More</button>
+                        <button class="btn btn-md btn-default">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================
+    End Image Blcok -->
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}

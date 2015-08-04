@@ -11,3 +11,4 @@ git+git://github.com/hbldh/wlmetrics.git
 WTForms==2.0.2
 gunicorn==19.3.0
 Flask-Stormpath==0.4.2
+Flask-PyMongo==0.3.1
