@@ -10,3 +10,4 @@ wheel==0.24.0
 git+git://github.com/hbldh/wlmetrics.git
 WTForms==2.0.2
 gunicorn==19.3.0
+Flask-Stormpath==0.4.2
