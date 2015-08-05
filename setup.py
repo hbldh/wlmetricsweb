@@ -33,7 +33,7 @@ setup(
         'Flask-Stormpath>=0.4.2'
     ],
     dependency_links=[
-        'git+https://github.com/hbldh/wlmetrics.git#egg=wlmetrics-0.1.0',
+        'https://github.com/hbldh/wlmetrics.git#egg=wlmetrics',
     ],
     ext_modules=[],
 )
