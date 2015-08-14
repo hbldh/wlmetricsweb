@@ -30,7 +30,8 @@ setup(
         'Flask>=0.10.1',
         'Flask-WTF>=0.10.1',
         'Flask-Login>=0.2.9',
-        'Flask-Stormpath>=0.4.2'
+        'Flask-Stormpath>=0.4.2',
+        'gunicorn>=19.3.0'
     ],
     dependency_links=[
         'https://github.com/hbldh/wlmetrics.git#egg=wlmetrics',
