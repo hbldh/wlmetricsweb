@@ -31,6 +31,7 @@ setup(
         'Flask-WTF>=0.10.1',
         'Flask-Login>=0.2.9',
         'Flask-Stormpath>=0.4.2',
+        'Flask-PyMongo>=0.3.1',
         'gunicorn>=19.3.0'
     ],
     dependency_links=[
