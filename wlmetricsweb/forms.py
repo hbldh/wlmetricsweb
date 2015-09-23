@@ -5,8 +5,8 @@
 ==================
 
 .. module:: forms
-   :platform: Unix, Windows
-   :synopsis: 
+    :platform: Unix, Windows
+    :synopsis:
 
 .. moduleauthor:: hbldh <henrik.blidh@nedomkull.com>
 
@@ -18,3 +18,12 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 from __future__ import absolute_import
+
+
+from flask_wtf import Form
+from wtforms import FileField
+
+
+class DropzoneForm(Form):
+
+    the_file = FileField()

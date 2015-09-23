@@ -24,9 +24,22 @@ from flask.ext.stormpath import login_required, user, groups_required
 
 from wlmetricsweb import app, forms, config, stormpath_manager, mongodb
 
+
 @app.route('/', methods=['GET', ])
 def index():
     if user.is_authenticated():
         return render_template('index.html', title='{0} {1}'.format(user.given_name, user.surname))
     else:
         return render_template('landing.html', title='Home')
+
+
+@app.route('upload', methods= ['GET', 'POST'])
+@login_required
+def upload():
+    dzform = forms.DropzoneForm()
+    if dzform.validate_on_submit():
+        # Handle file upload
+
+        return redirect('index')
+    else:
+        return render_template('upload', dzform=dzform, title='Upload File')
