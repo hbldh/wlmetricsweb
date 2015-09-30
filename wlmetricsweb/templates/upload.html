@@ -33,7 +33,7 @@
 	End Header -->
 
     <!-- Start Image Block
-================================================== -->
+    ================================================== -->
     <section id="image" class="section" style="background-color:#FFF; border-top: 1px solid rgba(0, 0, 0, .1);">
         <div class="container">
             <div class="row">
@@ -47,16 +47,22 @@
                 <div class="col-md-offset-3 col-md-6 col-sm-12">
                     <div class="content-block animate" data-animate="fadeInRight" style="margin-top: 60px;">
                         <h2>Dropzone</h2>
+                        <form class="dropzone" method="POST" action={{ url_for('upload') }}>
+                            {{ form.hidden_tag() }}
+                            <div class="form-group">
+                                {{ dzform.the_file.label }} <br> {{ dzform.the_file(size=20, class="form-control", placeholder="Select a file...") }}
+                            </div>
+					    </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================================================
+    <!-- ================================================== 
     End Image Blcok -->
 {% endblock %}
 
 {% block javascripts %}
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/min/dropzone.min.js"></script>
 {% endblock %}
