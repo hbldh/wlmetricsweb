@@ -38,8 +38,7 @@ def index():
 def upload():
     dzform = forms.DropzoneForm()
     if dzform.validate_on_submit():
-        # Handle file upload
-
+        # TODO: Handle file upload
         return redirect('index')
     else:
         return render_template('upload', dzform=dzform, title='Upload File')
